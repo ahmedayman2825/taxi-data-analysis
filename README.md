@@ -68,24 +68,8 @@ The goal is to transform raw transportation data into actionable insights throug
 ```text
 taxi-data-analysis/
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── data_cleaning.ipynb
-│   ├── exploratory_analysis.ipynb
-│   └── visualization.ipynb
-│
-├── assets/
-│   ├── dashboard.png
-│   └── charts/
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── analysis.py
-│   └── visualization.py
-│
+├──2017_Yellow_Taxi_Trip_Data.csv
+├── project_Taxidata_analysis.ipynb
 ├── requirements.txt
 ├── README.md
 └── LICENSE
