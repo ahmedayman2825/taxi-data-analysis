@@ -1,205 +1,233 @@
-# 🚕 NYC Taxi Trip Analysis
+# 🚖 Taxi Data Analysis
 
-<p align="center">
-  <img src="screenshots/trips-by-hour.png" width="850">
-</p>
+## 📊 Overview
 
-<p align="center">
-  <b>Exploratory Data Analysis of NYC Taxi Trips using Python</b>
-</p>
+**Taxi Data Analysis** is a data analytics project focused on exploring taxi trip datasets to uncover travel patterns, operational insights, and data-driven trends.
 
-<p align="center">
-  🐍 Python • 📊 Data Analysis • 📈 Visualization • 🧹 Data Cleaning
-</p>
+The project performs data cleaning, preprocessing, exploratory data analysis (EDA), and visualization to better understand factors such as trip distance, fare distribution, passenger behavior, peak demand periods, and geographic patterns.
+
+The goal is to transform raw transportation data into actionable insights through statistical analysis and interactive visualizations.
 
 ---
 
-# 📌 Project Overview
+## ✨ Key Features
 
-This project analyzes real-world NYC Yellow Taxi trip data to uncover travel patterns, fare behavior, customer payment preferences, and peak demand periods.
+### 📂 Data Processing
 
-The dataset was obtained from Kaggle and contains thousands of taxi trips recorded in New York City.
+* Import and clean large taxi datasets
+* Handle missing values and inconsistencies
+* Transform and prepare data for analysis
+* Feature engineering for enhanced insights
 
-The project follows a complete Data Analysis workflow:
+### 📈 Exploratory Data Analysis
 
-1. Data Loading
-2. Data Exploration
-3. Data Cleaning
-4. Outlier Detection
-5. Visualization
-6. Insight Generation
+* Trip frequency analysis
+* Passenger count distribution
+* Fare amount analysis
+* Distance and duration exploration
+* Peak-hour and peak-day identification
 
----
+### 📍 Geographic Insights
 
-# 🎯 Objectives
+* Pickup and drop-off location analysis
+* Demand hotspot identification
+* Spatial visualization of trip activity
 
-* Understand NYC taxi usage patterns
-* Identify peak travel hours
-* Analyze fare distributions
-* Study trip distances
-* Explore payment methods
-* Detect data anomalies and outliers
+### 📊 Data Visualization
 
----
+* Interactive charts and dashboards
+* Time-series analysis
+* Distribution plots
+* Correlation analysis
+* Trend detection
 
-# 📂 Dataset
+### 🔍 Business Insights
 
-The dataset contains information about:
-
-* Pickup and Dropoff Time
-* Passenger Count
-* Trip Distance
-* Fare Amount
-* Payment Type
-* Pickup Location
-* Dropoff Location
-* Tip Amount
-* Total Amount
-
-Dataset Source:
-
-https://www.kaggle.com/datasets/dhruvdre5/new-york-city-taxi-and-limousine-commission-data
+* Understand customer travel behavior
+* Identify high-demand periods
+* Discover operational optimization opportunities
+* Support transportation planning decisions
 
 ---
 
-# 🧹 Data Cleaning
+## 🛠️ Tech Stack
 
-The following preprocessing steps were performed:
-
-✅ Duplicate Removal
-
-✅ Missing Value Analysis
-
-✅ Datetime Conversion
-
-✅ Invalid Trip Removal
-
-✅ Outlier Detection using IQR
-
-✅ Fare Amount Filtering
+| Category             | Technologies                |
+| -------------------- | --------------------------- |
+| Language             | Python                      |
+| Data Processing      | Pandas, NumPy               |
+| Visualization        | Matplotlib, Seaborn, Plotly |
+| Notebook Environment | Jupyter Notebook            |
+| Data Analysis        | Statistical Analysis, EDA   |
+| Version Control      | Git & GitHub                |
 
 ---
 
-# 📸 Visualizations
-
-## 🚕 Trip Distance Distribution
-
-Distribution of taxi trip distances.
-
-![Trip Distance Distribution](screenshots/trip-distance-distribution.png)
-
----
-
-## 💰 Fare Amount Distribution
-
-Boxplot showing fare distribution and outliers.
-
-![Fare Boxplot](screenshots/fare-boxplot.png)
-
----
-
-## ⏰ Trips by Hour
-
-Number of taxi trips recorded during each hour of the day.
-
-![Trips by Hour](screenshots/trips-by-hour.png)
-
----
-
-## 📏 Trip Distance vs Fare Amount
-
-Relationship between trip distance and fare amount.
-
-![Fare vs Distance](screenshots/fare-vs-distance.png)
-
----
-
-## 💳 Payment Method Distribution
-
-Distribution of customer payment methods.
-
-![Payment Distribution](screenshots/payment-distribution.png)
-
----
-
-# 📈 Key Insights
-
-The analysis revealed:
-
-* Peak taxi demand occurs around 7 PM.
-* Longer trips generally result in higher fares.
-* Most customers use Payment Method 1.
-* Most taxi trips are relatively short distances.
-* Fare distributions contain several outliers that required cleaning.
-
----
-
-# 🛠️ Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
-
----
-
-# 📚 Skills Demonstrated
-
-* Exploratory Data Analysis (EDA)
-* Data Cleaning
-* Data Visualization
-* Statistical Analysis
-* Feature Exploration
-* Outlier Detection
-* Business Insight Generation
-
----
-
-# 📁 Repository Structure
+## 📁 Project Structure
 
 ```text
-nyc-taxi-trip-analysis/
+taxi-data-analysis/
 │
-├── taxi_analysis.ipynb
-├── 2017_Yellow_Taxi_Trip_Data.csv
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   ├── data_cleaning.ipynb
+│   ├── exploratory_analysis.ipynb
+│   └── visualization.ipynb
+│
+├── assets/
+│   ├── dashboard.png
+│   └── charts/
+│
+├── src/
+│   ├── preprocessing.py
+│   ├── analysis.py
+│   └── visualization.py
+│
+├── requirements.txt
 ├── README.md
-│
-└── screenshots/
-    ├── dataset-preview.png
-    ├── trip-distance-distribution.png
-    ├── fare-boxplot.png
-    ├── trips-by-hour.png
-    ├── fare-vs-distance.png
-    ├── payment-distribution.png
-    └── summary-insights.png
+└── LICENSE
+```
+
+> Structure may evolve as the project grows.
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ahmedayman2825/taxi-data-analysis.git
+cd taxi-data-analysis
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-# 🚀 Run Locally
+## ▶️ Usage
 
-Install dependencies:
-
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
-
-Launch Jupyter:
+### Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open:
+Open the analysis notebook and run the cells sequentially.
 
-```text
-taxi_analysis.ipynb
+### Run Python Scripts
+
+```bash
+python src/preprocessing.py
+python src/analysis.py
+python src/visualization.py
 ```
 
 ---
 
-# ⭐ Conclusion
+## 📸 Sample Insights
 
-This project demonstrates the complete process of transforming raw transportation data into meaningful insights through data cleaning, visualization, and exploratory analysis.
+The analysis can reveal:
+
+* 🚕 Most active pickup locations
+* 📅 Daily and weekly demand trends
+* ⏰ Peak travel hours
+* 💰 Fare distribution patterns
+* 📏 Relationship between trip distance and fare
+* 👥 Passenger count behavior
+* 📍 Geographic demand hotspots
+
+---
+
+## 📈 Potential Applications
+
+* Transportation analytics
+* Smart city planning
+* Taxi fleet optimization
+* Demand forecasting
+* Urban mobility research
+* Business intelligence dashboards
+
+---
+
+## 🔮 Future Improvements
+
+* Real-time taxi data integration
+* Machine learning demand forecasting
+* Interactive web dashboard
+* Predictive fare estimation
+* Route optimization analysis
+* Geospatial heatmaps
+* Automated reporting pipeline
+* Cloud deployment support
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request
+
+---
+
+## Collaborators 
+- **[@tAwFiK2005](https://github.com/tAwFiK2005)**   
+- **[@ahmedayman2825](https://github.com/ahmedayman2825)** 
+- **[@ashrafeesa](https://github.com/ashrafeesa)**  
+- **[@ahmedabdalwahab](https://github.com/ahmedabdalwahab)**  
+- **[@AhmedZamel09](https://github.com/AhmedZamel09)** ---
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **star** on GitHub. It helps others discover the project and supports future development.
+
+---
